@@ -9,13 +9,13 @@ image:
   pullPolicy: IfNotPresent
 
 resources:
-  limits:
-    cpu: ".5"
-    memory: "256Mi"
+  requests:
+    cpu: 50m
+    memory: 256Mi
 
-serviceType: "ClusterIP"
-
-servicePort: 8111
+service:
+  port: 8111
+  type: ClusterIP
 
 configmap:
   data: "version: alpine"
