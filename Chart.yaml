@@ -1,0 +1,11 @@
+apiVersion: v1
+name: nginx-deployment
+description: Nginx Deployment Chart
+keywords:
+  - nginx
+
+version: 1.0.0
+
+maintainers:
+  - name: ananta
+    email: anantarajbastola@gmail.com
